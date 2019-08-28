@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="SuccessTest(failed)">
+    <classes>
+      <class name="lemon.day01.SuccessTest">
+        <methods>
+          <include name="f2"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+          <include name="f1"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- lemon.day01.SuccessTest -->
+      <class name="lemon.day01.SuccessTest2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- lemon.day01.SuccessTest2 -->
+    </classes>
+  </test> <!-- SuccessTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
