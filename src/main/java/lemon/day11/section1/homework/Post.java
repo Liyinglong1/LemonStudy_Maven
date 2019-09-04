@@ -21,7 +21,11 @@ public class Post {
 		// TODO Auto-generated method stub
 		
 		//准备一个post请求
-		HttpPost httpPost = new HttpPost("http://mgt.myhwdztest.com/api/purchase/member_purchase/insert_member_purchase");
+		Post("http://mgt.myhwdztest.com/api/purchase/member_purchase/insert_member_purchase");
+		}
+
+	private static void Post(String url1) throws IOException, ClientProtocolException {
+		HttpPost httpPost = new HttpPost("url1");
 		
 		
 		//参数设置
@@ -39,7 +43,7 @@ public class Post {
 		httpPost.setHeader("Accept", "*/*");
 		httpPost.setHeader("Origin", "http://mgt.myhwdztest.com");
 		httpPost.setHeader("Referer", "http://mgt.myhwdztest.com");
-		httpPost.setHeader("Accept-Encoding", "gzip, deflate");
+		httpPost.setHeader("Accept-Encoding", "gzip, deflate");  
 		httpPost.setHeader("Accept-Language", "zh-CN,zh;q=0.9");
 		httpPost.setHeader("Cookie", "_relogin_id_token=73|5E0142EA-5774-4CB7-9C67-84DFD56E8C19|liyinglong; member_credit_list=2; JSESSIONID=832C21D8B06B256C9127EAA786E24E44; isMarket=");
 		//创建一个发包客户端
@@ -65,6 +69,6 @@ public class Post {
 		HttpEntity httpEntitys = response.getEntity();
 		String entityStr = EntityUtils.toString(httpEntity);
 		System.out.println(entityStr);
-		}
+	}
 
 }
