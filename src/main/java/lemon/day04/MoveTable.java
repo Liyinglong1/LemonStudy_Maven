@@ -7,7 +7,7 @@ public class MoveTable {
 	public static void main(String[] args) {
 		if(age>7) {
 			System.out.println("���԰ᶯ����");
-		}else if(age>5 && sex=='女') {
+		}else if(age>5 && sex=='Ů') {
 			System.out.println("���԰ᶯ����");
 		}else {
 			System.out.println("�㻹̫С��,�᲻����");
