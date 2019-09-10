@@ -199,6 +199,40 @@ public class HttpUtils {
 		return null;
 	}
 	
+
+	/**
+	 * post方法
+	 * 
+	 * @param url
+	 *            请求url
+	 * @param requestData
+	 *            请求体（json字符串）
+	 * @return
+	 */
+	public static String post(String url, String requestData) {
+		String entityStr = null;
+		try {
+			HttpPost post = new HttpPost(url);
+			//设置必须的请求头
+			post.setHeader("X-Lemonban-Media-Type", "lemonban.v1");
+			// 创建一个请求体
+			StringEntity entity = new StringEntity(requestData, ContentType.APPLICATION_JSON);
+			// 设置字符集
+			entity.setContentEncoding("utf-8");
+			// 设值请求体
+			post.setEntity(entity);
+			// 创建发包客户端
+			CloseableHttpClient httpClient = HttpClients.createDefault();
+			// 得到响应
+			CloseableHttpResponse response = httpClient.execute(post);
+			// 获取响应体
+			HttpEntity respEntity = response.getEntity();
+			entityStr = EntityUtils.toString(respEntity);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return entityStr;
+	}
 	/**
 	 * get方法
 	 * @param apiCaseDetail 接口测试用例详细信息

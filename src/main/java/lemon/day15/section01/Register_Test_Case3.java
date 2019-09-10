@@ -8,7 +8,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Register_Test_Case3 {
-
 	@DataProvider
 	public Object[][] getData() {
 		ArrayList<Object> dataList = ExcelUtils.readExcel("/case/test_case_03.xlsx", 0, ApiCaseDetail.class);

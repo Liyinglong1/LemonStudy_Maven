@@ -44,8 +44,8 @@ public class All_Test_Case {
 	public void test_case(ApiCaseDetail apiCaseDetail) {
 		String url = apiCaseDetail.getApiInfo().getUrl();
 		String requestData = apiCaseDetail.getRequestData();
-//		String result = HttpUtils.post(url, requestData);
-//		System.out.println(result);
+		String result = HttpUtils.post(url, requestData);
+		System.out.println(result);
 	}
 
 	// example--》给自己、给其他人
