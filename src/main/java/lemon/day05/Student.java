@@ -1,8 +1,7 @@
 package lemon.day05;
-
 public class Student {
 	/*
-	 * £¨1£©¶¨ÒåÒ»¸öÑ§ÉúÀà£¨Student£©£¬ËûÓĞÈı¸öÊôĞÔ£º ĞÕÃûnameºÍÄêÁäageºÍĞÔ±ğgender¡£ * 
+	 * ï¼ˆ1ï¼‰å®šä¹‰ä¸€ä¸ªå­¦ç”Ÿç±»ï¼ˆStudentï¼‰ï¼Œä»–æœ‰ä¸‰ä¸ªå±æ€§ï¼š å§“ånameå’Œå¹´é¾„ageå’Œæ€§åˆ«genderã€‚ * 
  * 
  */
 	String name;

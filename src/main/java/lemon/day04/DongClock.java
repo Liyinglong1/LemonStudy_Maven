@@ -8,22 +8,22 @@ import java.util.Scanner;
 
 public class DongClock {
 	
-//	public SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//¶¨ÒåÊ±¼ä¸ñÊ½
-//	public String nowtime = df.format(new Date());//»ñµÃµ±Ç°Ê±¼ä
+//	public SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//å®šä¹‰æ—¶é—´æ ¼å¼
+//	public String nowtime = df.format(new Date());//è·å¾—å½“å‰æ—¶é—´
 //	
-//	public long nowtime1 = System.currentTimeMillis();//»ñµÃµ±Ç°Ê±¼ä´Á
+//	public long nowtime1 = System.currentTimeMillis();//è·å¾—å½“å‰æ—¶é—´æˆ³
 	
 	long nowtime;
 	long overworktime;
 	
 	public static long  getNowtime() {
 		
-		//»ñµÃµ±Ç°Ê±¼ä ×Ö·û´®
-		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//ÉèÖÃÈÕÆÚ¸ñÊ½
+		//è·å¾—å½“å‰æ—¶é—´ å­—ç¬¦ä¸²
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//è®¾ç½®æ—¥æœŸæ ¼å¼
 		String date = df.format(new Date());
 		System.out.println(date);
 		
-		//»ñµÃµ±Ç°Ê±¼ä´Á
+		//è·å¾—å½“å‰æ—¶é—´æˆ³
 		Date date1 = new Date();
 		long time = date1.getTime(); 
 		System.out.println(time);
@@ -35,7 +35,7 @@ public class DongClock {
 		Calendar calendar = new GregorianCalendar();  
 	    calendar.add(Calendar.DAY_OF_MONTH,-1);  
 	  
-	    //Ò»ÌìµÄ¿ªÊ¼Ê±¼ä yyyy:MM:dd 00:00:00  
+	    //ä¸€å¤©çš„å¼€å§‹æ—¶é—´ yyyy:MM:dd 00:00:00  
 	    calendar.set(Calendar.HOUR_OF_DAY,0);  
 	    calendar.set(Calendar.MINUTE,0);  
 	    calendar.set(Calendar.SECOND,0);  
@@ -49,8 +49,8 @@ public class DongClock {
 	    Long currentTimestamps=System.currentTimeMillis();
         Long oneDayTimestamps= Long.valueOf(60*60*24*1000);
         
-        System.out.println(currentTimestamps-(currentTimestamps+60*60*8*1000)%oneDayTimestamps); //»ñµÃµ±ÌìµÚÒ»¸öÊ±¼ä´Á
-        long overworktime =currentTimestamps-(currentTimestamps+60*60*8*1000)%oneDayTimestamps+63030000L;  //»ñµÃÏÂ°àÊ±¼ä
+        System.out.println(currentTimestamps-(currentTimestamps+60*60*8*1000)%oneDayTimestamps); //è·å¾—å½“å¤©ç¬¬ä¸€ä¸ªæ—¶é—´æˆ³
+        long overworktime =currentTimestamps-(currentTimestamps+60*60*8*1000)%oneDayTimestamps+63030000L;  //è·å¾—ä¸‹ç­æ—¶é—´
        
         return overworktime;
 	}
@@ -60,22 +60,21 @@ public class DongClock {
 		
 		 long Overworktime = getOverworktime();
 		 long nowtime = getNowtime();
-		 long sum = Overworktime - nowtime; //»¹Ê£¶àÉÙÊ±¼ä´Á
+		 long sum = Overworktime - nowtime; //è¿˜å‰©å¤šå°‘æ—¶é—´æˆ³
 		 System.out.println(sum);
 		 double result = sum/60000;
-	    System.out.println("»¹ÓĞ"+ result+"·ÖÖÓÏÂ°à");
-	    System.out.println("»¹ÓĞ"+result/2+"¶«ÏÂ°à");
+	    System.out.println("è¿˜æœ‰"+ result+"åˆ†é’Ÿä¸‹ç­");
+	    System.out.println("è¿˜æœ‰"+result/2+"ä¸œä¸‹ç­");
 	    if(result < 0) {
-	    	System.out.println("ÏÂ°àÁË£¬¼ÓÄãÂèµÄ°à");
+	    	System.out.println("ä¸‹ç­äº†ï¼ŒåŠ ä½ å¦ˆçš„ç­");
 	    }
 	}
 	/*
 	public static String DATE_YYYY_MM_DD = "yyyy-MM-dd";
 	public static String DATE_Y_M_DDHHMMSS = "yyyy-MM-dd HH:mm:ss";
-	/** »ñÈ¡Ê±¼ä´Á milliseconds 
+	/** è·å–æ—¶é—´æˆ³ milliseconds 
 	static public long getLongDate(String dateStr, String format){
 	    if (StringUtils.isNotBlank(dateStr) && StringUtils.isNotBlank(format)){
-
 	        SimpleDateFormat sf = new SimpleDateFormat(format);
 	        try {
 	            return sf.parse(dateStr).getTime();
@@ -85,8 +84,7 @@ public class DongClock {
 	    }
 	    return 0l;
 	}
-
-	/** ÈÕÆÚ + days Ìì 
+	/** æ—¥æœŸ + days å¤© 
 	static public String getDateChangeString(String dateStr, String format, int days){
 	    long currentDateLong = getLongDate(dateStr, format);
 	    long changedDateLong;
@@ -101,14 +99,14 @@ public class DongClock {
 	        return "";
 	    }
 	}
-	// ºÁÃë×ª»¯³É ÈÕÆÚ¸ñÊ½ yyyy-MM-dd
+	// æ¯«ç§’è½¬åŒ–æˆ æ—¥æœŸæ ¼å¼ yyyy-MM-dd
 	public static String getDateFromMilliSecondsLong(long millisecond){
 	    if(millisecond <= 0)
 	        return " ";
 	    else{
 	        Date date = new Date();
 	        try{
-	            date.setTime(millisecond);    // ×ªÎªmillisecond
+	            date.setTime(millisecond);    // è½¬ä¸ºmillisecond
 	        }catch(NumberFormatException nfe){
 	        }
 	        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

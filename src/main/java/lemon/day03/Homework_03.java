@@ -1,18 +1,19 @@
 package lemon.day03;
 
+
 public class Homework_03 {
 	
-	public Homework_03() {   //Õâ¸öÊÇ¹¹Ôì·½·¨
+	public Homework_03() {   //è¿™ä¸ªæ˜¯æ„é€ æ–¹æ³•
 		
 	}
-	public void dog() {//Õâ¸ö²»ÊÇ¹¹Ôì·½·¨
+	public void dog() {//è¿™ä¸ªä¸æ˜¯æ„é€ æ–¹æ³•
 		
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * ´òÓ¡ÈçÏÂ
+		 * æ‰“å°å¦‚ä¸‹
 		 * *
 		 * **
 		 * ***
@@ -26,29 +27,29 @@ public class Homework_03 {
 			System.out.println(" ");
 		}
 		/*
-		 * Ğ´Ò»¶Î³ÌĞò·Ö±ğÇó³ö0µ½100Ö®¼äËùÓĞµÄÅ¼ÊıµÄºÍÒÔ¼°ÆæÊıµÄºÍ
+		 * å†™ä¸€æ®µç¨‹åºåˆ†åˆ«æ±‚å‡º0åˆ°100ä¹‹é—´æ‰€æœ‰çš„å¶æ•°çš„å’Œä»¥åŠå¥‡æ•°çš„å’Œ
 		 */
-		int sum = 0;//Ä¬ÈÏÎª0
+		int sum = 0;//é»˜è®¤ä¸º0
 		for(int i=0;i<100;i++) {
 			if(i%2==0) {
 				sum = sum+i;
 			}
 		}
-		System.out.println("0µ½100Ö®¼äËùÓĞµÄÅ¼ÊıµÄºÍÒÔ¼°ÆæÊıµÄºÍ"+sum);
+		System.out.println("0åˆ°100ä¹‹é—´æ‰€æœ‰çš„å¶æ•°çš„å’Œä»¥åŠå¥‡æ•°çš„å’Œ"+sum);
 		
 		
 		/*
-		 * Ğ´Ò»¶Î³ÌĞòÇó1+2+3+...+999+1000µÄÖµ
+		 * å†™ä¸€æ®µç¨‹åºæ±‚1+2+3+...+999+1000çš„å€¼
 		 */
 		
 		int result=0;
 		for(int i=0;i<=1000;i++) {
 			result = result +i;
 		}
-		System.out.println("ÖµÎª"+result);
+		System.out.println("å€¼ä¸º"+result);
 		
 		
-		//¾Å¾Å³Ë·¨±í
+		//ä¹ä¹ä¹˜æ³•è¡¨
 		for (int i=1;i<=9;i++){
 
             for (int a=1;a<=i;a++){

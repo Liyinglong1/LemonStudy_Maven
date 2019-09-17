@@ -1,14 +1,14 @@
 package lemon.day05;
 
 public class CalcAdd {
-	//¶¨ÒåÒ»¸öÀà¡¢¶¨ÒåÒ»¸ö·½·¨ÓÃÀ´¼ÆËã1+2+3+4+...+nµÄÖµ£¬ÔÚmain·½·¨ÖĞµ÷ÓÃ·½·¨£¬¼ÆËãn=200Ê±µÄÖµ 
+	//å®šä¹‰ä¸€ä¸ªç±»ã€å®šä¹‰ä¸€ä¸ªæ–¹æ³•ç”¨æ¥è®¡ç®—1+2+3+4+...+nçš„å€¼ï¼Œåœ¨mainæ–¹æ³•ä¸­è°ƒç”¨æ–¹æ³•ï¼Œè®¡ç®—n=200æ—¶çš„å€¼ 
 	static int length = 200;
-	//ÎŞ²Î¹¹Ôì
+	//æ— å‚æ„é€ 
 	public CalcAdd() {
 		// TODO Auto-generated constructor stub
 		
 	}
-	//Êı×éÑ­»·Ìí¼ÓÊı¾İ
+	//æ•°ç»„å¾ªç¯æ·»åŠ æ•°æ®
 	public static  int[] addNumber() {
 		int[] array = new int[length];
 		for (int i=0;i<array.length;i++) {
@@ -18,7 +18,7 @@ public class CalcAdd {
 	}
 	
 	// int[] array = new int[6]
-	//°ÑÑ­»·Ìí¼ÓµÄÊı¾İÓÃÒ»¸öÊı×é½ÓÊÜ£¬Ñ­»·È¡³öÖµÏà¼Ó£¬´òÓ¡sum
+	//æŠŠå¾ªç¯æ·»åŠ çš„æ•°æ®ç”¨ä¸€ä¸ªæ•°ç»„æ¥å—ï¼Œå¾ªç¯å–å‡ºå€¼ç›¸åŠ ï¼Œæ‰“å°sum
 	public static void plus() {
 		int sum =0;
 		int[] array = addNumber();

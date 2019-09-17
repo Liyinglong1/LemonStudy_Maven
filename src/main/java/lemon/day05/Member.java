@@ -1,20 +1,21 @@
 package lemon.day05;
 
-/*¶¨ÒåÒ»¸ö»áÔ±Àà£¨Member£©£¬¸ÃÀàÓĞÈı¸öÊôĞÔ£ºÓÃ»§ÃûregName£¬ÊÖ»úºÅÂëmobilePhone£¬¿ÉÓÃÓà¶îleaveAmount£¬
-±àĞ´mainº¯Êı 
-ÔÚmainº¯ÊıÀïµ÷ÓÃÎŞ²Î¹¹Ôìº¯ÊıÀ´´´½¨Ò»¸ö»áÔ±¶ÔÏótom
-ÔÚmainº¯ÊıÀïµ÷ÓÃ´ø²Î¹¹Ôìº¯ÊıÀ´´´½¨Ò»¸öÑ§Éú¶ÔÏójack
-ÔÚ´ø²Î¹¹Ôìº¯ÊıÖĞÊ¹ÓÃ¸÷²ÎÊı³õÊ¼»¯¶ÔÓ¦ÊôĞÔµÄÖµ*/
+
+/*å®šä¹‰ä¸€ä¸ªä¼šå‘˜ç±»ï¼ˆMemberï¼‰ï¼Œè¯¥ç±»æœ‰ä¸‰ä¸ªå±æ€§ï¼šç”¨æˆ·åregNameï¼Œæ‰‹æœºå·ç mobilePhoneï¼Œå¯ç”¨ä½™é¢leaveAmountï¼Œ
+ç¼–å†™mainå‡½æ•° 
+åœ¨mainå‡½æ•°é‡Œè°ƒç”¨æ— å‚æ„é€ å‡½æ•°æ¥åˆ›å»ºä¸€ä¸ªä¼šå‘˜å¯¹è±¡tom
+åœ¨mainå‡½æ•°é‡Œè°ƒç”¨å¸¦å‚æ„é€ å‡½æ•°æ¥åˆ›å»ºä¸€ä¸ªå­¦ç”Ÿå¯¹è±¡jack
+åœ¨å¸¦å‚æ„é€ å‡½æ•°ä¸­ä½¿ç”¨å„å‚æ•°åˆå§‹åŒ–å¯¹åº”å±æ€§çš„å€¼*/
 public class Member {
 	String regName;
 	String mobilePhone;
 	double leaveAmount;
 	
-	//ÎŞ²Î¹¹Ôì
+	//æ— å‚æ„é€ 
 	public Member() {
 		
 	}
-	//ÓĞ²Î¹¹Ôì
+	//æœ‰å‚æ„é€ 
 	public Member(String regName,String mobilePhone,double leaveAmount) {
 		this.regName = regName;
 		this.mobilePhone = mobilePhone;
@@ -23,9 +24,9 @@ public class Member {
 	}
 	
 	public static void main(String[] args) {
-		//ÔÚmainº¯ÊıÀïµ÷ÓÃÎŞ²Î¹¹Ôìº¯ÊıÀ´´´½¨Ò»¸ö»áÔ±¶ÔÏótom
+		//åœ¨mainå‡½æ•°é‡Œè°ƒç”¨æ— å‚æ„é€ å‡½æ•°æ¥åˆ›å»ºä¸€ä¸ªä¼šå‘˜å¯¹è±¡tom
 		Member tom = new Member();
-		//ÔÚmainº¯ÊıÀïµ÷ÓÃ´ø²Î¹¹Ôìº¯ÊıÀ´´´½¨Ò»¸öÑ§Éú¶ÔÏójack
-		Member jack = new Member("ÀîËÄ","18373969442",182.23);
+		//åœ¨mainå‡½æ•°é‡Œè°ƒç”¨å¸¦å‚æ„é€ å‡½æ•°æ¥åˆ›å»ºä¸€ä¸ªå­¦ç”Ÿå¯¹è±¡jack
+		Member jack = new Member("æå››","18373969442",182.23);
 	}
 }

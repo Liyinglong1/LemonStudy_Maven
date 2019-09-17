@@ -1,6 +1,6 @@
 package lemon.day04;
 
-//Ê¹ÓÃswitch½á¹¹ÊµÏÖÎªĞ¡Ã÷¶¨ÖÆÑ§Ï°¼Æ»®£¬ĞÇÆÚÒ»¡¢ĞÇÆÚÈı¡¢ĞÇÆÚÎåÑ§Ï°±à³Ì£¬ĞÇÆÚ¶ş¡¢ĞÇÆÚËÄ¡¢ĞÇÆÚÁùÑ§Ï°Ó¢Óï£¬ĞÇÆÚÈÕĞİÏ¢
+//ä½¿ç”¨switchç»“æ„å®ç°ä¸ºå°æ˜å®šåˆ¶å­¦ä¹ è®¡åˆ’ï¼Œæ˜ŸæœŸä¸€ã€æ˜ŸæœŸä¸‰ã€æ˜ŸæœŸäº”å­¦ä¹ ç¼–ç¨‹ï¼Œæ˜ŸæœŸäºŒã€æ˜ŸæœŸå››ã€æ˜ŸæœŸå…­å­¦ä¹ è‹±è¯­ï¼Œæ˜ŸæœŸæ—¥ä¼‘æ¯
 public class StudyPlan {
 	static int day = 7;
 	public static void main(String[] args) {
@@ -8,15 +8,15 @@ public class StudyPlan {
 		case 1:
 		case 3:
 		case 5:
-			System.out.println("Ñ§Ï°±à³Ì");
+			System.out.println("å­¦ä¹ ç¼–ç¨‹");
 			break;
 		case 2:
 		case 4:
 		case 6:
-			System.out.println("Ñ§Ï°Ó¢Óï");
+			System.out.println("å­¦ä¹ è‹±è¯­");
 			break;
 		case 7:
-			System.out.println("ĞİÏ¢Ò»Ìì");
+			System.out.println("ä¼‘æ¯ä¸€å¤©");
 			break;
 		}
 	}

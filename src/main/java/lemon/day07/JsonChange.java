@@ -1,5 +1,4 @@
 package lemon.day07;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -7,18 +6,18 @@ import java.util.Set;
 import com.alibaba.fastjson.JSONObject;
 
 public class JsonChange {
-//	3£º½«ÈçÏÂJson×Ö·û´®×ª³ÉJava¶ÔÏó
-//	1). {"name": "tom","age": "26","gender": "ÄĞ"}
-//	2).  [ {"name": "tom","age": "26","gender": "ÄĞ"}, {"name": "jack","age": "25","gender": "ÄĞ"}, {"name": "rose","age": "26","gender": "Å®"} ]
+//	3ï¼šå°†å¦‚ä¸‹Jsonå­—ç¬¦ä¸²è½¬æˆJavaå¯¹è±¡
+//	1). {"name": "tom","age": "26","gender": "ç”·"}
+//	2).  [ {"name": "tom","age": "26","gender": "ç”·"}, {"name": "jack","age": "25","gender": "ç”·"}, {"name": "rose","age": "26","gender": "å¥³"} ]
 	
 	public static void main(String[] args) {
-		String json1="{\"name\": \"tom\",\"age\": \"26\",\"gender\": \"ÄĞ\"}";
-		String json2="[ {\"name\": \"tom\",\"age\": \"26\",\"gender\": \"ÄĞ\"}, {\"name\": \"jack\",\"age\": \"25\",\"gender\": \"ÄĞ\"}, {\"name\": \"rose\",\"age\": \"26\",\"gender\": \"Å®\"} ]";
-		//×ª»»³Éuser¶ÔÏó 
+		String json1="{\"name\": \"tom\",\"age\": \"26\",\"gender\": \"ç”·\"}";
+		String json2="[ {\"name\": \"tom\",\"age\": \"26\",\"gender\": \"ç”·\"}, {\"name\": \"jack\",\"age\": \"25\",\"gender\": \"ç”·\"}, {\"name\": \"rose\",\"age\": \"26\",\"gender\": \"å¥³\"} ]";
+		//è½¬æ¢æˆuserå¯¹è±¡ 
 		User user = JSONObject.parseObject(json1, User.class);
 		System.out.println(user);
 		
-		//×ª»» ³Émap¶ÔÏó
+		//è½¬æ¢ æˆmapå¯¹è±¡
 		Map map = (Map) JSONObject.parse(json1);
 		System.out.println(map);
 		Set<String> set= map.keySet();
@@ -27,13 +26,13 @@ public class JsonChange {
 		}
 		
 		System.out.println(json2);
-		//×ª»» ³Émap¶ÔÏó
+		//è½¬æ¢ æˆmapå¯¹è±¡
 		List<Map> datas = JSONObject.parseArray(json2, Map.class);
 		for (Map map2 : datas) {
 			System.out.println(map2);
 		}
 		
-		//×ª»»³Éuser¶ÔÏó 
+		//è½¬æ¢æˆuserå¯¹è±¡ 
 		 List<User> user1 = JSONObject.parseArray(json2,User.class);
 		 for (User user2 : user1) {
 			System.out.println(user2);
