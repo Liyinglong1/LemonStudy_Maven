@@ -26,7 +26,6 @@ public class SqlCheckUtils {
 	 */
 	public static void afterCheck(ApiCaseDetail apiCaseDetail) {
 		check(apiCaseDetail, 2);
-
 	}
 
 	/**

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 10 16:48:57 CST 2019</td>
+<td>Started on:</td><td>Wed Sep 18 17:30:30 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2332 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2280 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,218 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=1, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
+<td><div><pre>java.lang.ExceptionInInitializerError
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Unknown Source)
+	at java.util.Properties.load0(Unknown Source)
+	at java.util.Properties.load(Unknown Source)
+	at lemon.day19.utils.DbUtils.init(DbUtils.java:59)
+	at lemon.day19.utils.DbUtils.&lt;clinit&gt;(DbUtils.java:33)
+	... 27 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace52908367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52908367'><pre>java.lang.ExceptionInInitializerError
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Unknown Source)
+	at java.util.Properties.load0(Unknown Source)
+	at java.util.Properties.load(Unknown Source)
+	at lemon.day19.utils.DbUtils.init(DbUtils.java:59)
+	at lemon.day19.utils.DbUtils.&lt;clinit&gt;(DbUtils.java:33)
+	... 27 more
+</pre></div></td>
+<td>0</td>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
+<tr>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=2, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÕËºÅÒÑ´æÔÚ"}], apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace231756373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace231756373'><pre>java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
+<tr>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=8, apiId=2, requestData={"mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":0},
+{"jsonPath":"$.msg","expected":"OK"},
+{"jsonPath":"$.data.id","expected":38},
+{"jsonPath":"$.data.type","expected":1}], apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1225568095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225568095'><pre>java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,90 +287,84 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=1, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=3, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=2, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=4, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=3, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=5, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"ÃÜÂëÎª¿Õ"}], apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=4, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=6, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"ÊÖ»úºÅÎª¿Õ"}], apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=5, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=7, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=6, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, apiInfo=ApidetailCase [apiId=1, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=9, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=7, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=8, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=11, apiId=2, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=9, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=12, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=11, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=14, apiId=2, requestData={"mobile_phone": "13888887773"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=12, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 0}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773"}, apiInfo=ApidetailCase [apiId=2, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 6300}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=14, apiId=3, requestData={"member_id": 47,"amount": 0}, apiInfo=ApidetailCase [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=17, apiId=3, requestData={"member_id": 47,"amount": 500001}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 <tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 6300}, apiInfo=ApidetailCase [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]]</td>
+<td title='lemon.day19.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day19.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=18, apiId=3, requestData={"member_id": 47,"amount": -100}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]]</td>
 <td></td>
 <td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
-<tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 500001}, apiInfo=ApidetailCase [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]]</td>
-<td></td>
-<td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
-<tr>
-<td title='lemon.day15.study01.section02.All_Test_Case.test_case()'><b>test_case</b><br>Test class: lemon.day15.study01.section02.All_Test_Case<br>Parameters: ApiInfoCase [caseId=17, apiId=3, requestData={"member_id": 47,"amount": -100}, apiInfo=ApidetailCase [apiId=3, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]]</td>
-<td></td>
-<td>0</td>
-<td>lemon.day15.study01.section02.All_Test_Case@6ad5c04e</td></tr>
+<td>lemon.day19.testCase.All_Test_Case@256216b3</td></tr>
 </table><p>
 </body>
 </html>

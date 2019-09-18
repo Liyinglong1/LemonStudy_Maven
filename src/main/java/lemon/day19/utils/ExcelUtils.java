@@ -62,6 +62,8 @@ public class ExcelUtils {
 				String fieldName = cell.getStringCellValue();
 				// 把当前对应的属性名称添加到属性容器中去
 				fieldArray[i] = fieldName;
+				
+				
 			}
 			// 获取最大的行数
 			int lastRowNum = sheet.getLastRowNum();

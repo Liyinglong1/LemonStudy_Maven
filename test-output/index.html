@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-1714785345\testng-customsuite.xml</span>
+                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-2003289931\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,   17 passed</span>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=8, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, act...)">test_case(ApiCaseDetail [caseId=8, apiId=2, requestData={"mobile_phone": "13855557777","pwd": "12345678"}, act...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=2, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, ac...)">test_case(ApiCaseDetail [caseId=2, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=1, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, ac...)">test_case(ApiCaseDetail [caseId=1, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,87 +125,77 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=5, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailCase [...)">test_case(ApiInfoCase [caseId=5, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=3, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRe...)">test_case(ApiCaseDetail [caseId=3, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualRe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=12, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, apiInfo...)">test_case(ApiInfoCase [caseId=12, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, apiInfo...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=17, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 500001}, actualResp=, expe...)">test_case(ApiCaseDetail [caseId=17, apiId=3, requestData={"member_id": 47,"amount": 500001}, actualResp=, expe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=3, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Ap...)">test_case(ApiInfoCase [caseId=3, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, apiInfo=Ap...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=18, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: -100}, actualResp=, expect...)">test_case(ApiCaseDetail [caseId=18, apiId=3, requestData={"member_id": 47,"amount": -100}, actualResp=, expect...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=6, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, apiInfo...)">test_case(ApiInfoCase [caseId=6, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, apiInfo...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=6, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, expected...)">test_case(ApiCaseDetail [caseId=6, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expected...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=1, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiI...)">test_case(ApiInfoCase [caseId=1, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345678"}, apiI...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=12, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, exp...)">test_case(ApiCaseDetail [caseId=12, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, exp...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=15, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 6300}, apiInfo=ApidetailCase...)">test_case(ApiInfoCase [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 6300}, apiInfo=ApidetailCase...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=4, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRe...)">test_case(ApiCaseDetail [caseId=4, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualRe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=2, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Ap...)">test_case(ApiInfoCase [caseId=2, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, apiInfo=Ap...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=15, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 0}, actualResp=, expectedR...)">test_case(ApiCaseDetail [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 0}, actualResp=, expectedR...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=9, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Apidetai...)">test_case(ApiInfoCase [caseId=9, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, apiInfo=Apidetai...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=5, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp...)">test_case(ApiCaseDetail [caseId=5, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, actualResp...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=8, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Api...)">test_case(ApiInfoCase [caseId=8, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, apiInfo=Api...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=16, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 6300}, actualResp=, expect...)">test_case(ApiCaseDetail [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 6300}, actualResp=, expect...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=10, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailCase [...)">test_case(ApiInfoCase [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=7, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, actua...)">test_case(ApiCaseDetail [caseId=7, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, actua...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=7, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiIn...)">test_case(ApiInfoCase [caseId=7, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345678"}, apiIn...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=10, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualResp=, ...)">test_case(ApiCaseDetail [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=14, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 0}, apiInfo=ApidetailCase [a...)">test_case(ApiInfoCase [caseId=14, apiId=3, requestData={"member_id": 47,"amount": 0}, apiInfo=ApidetailCase [a...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=13, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, actua...)">test_case(ApiCaseDetail [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, actua...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=4, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=Apid...)">test_case(ApiInfoCase [caseId=4, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, apiInfo=Apid...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=9, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRes...)">test_case(ApiCaseDetail [caseId=9, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualRes...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=11, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailC...)">test_case(ApiInfoCase [caseId=11, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, apiInfo=ApidetailC...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=11, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, expected...)">test_case(ApiCaseDetail [caseId=11, apiId=2, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expected...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=16, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 500001}, apiInfo=ApidetailCa...)">test_case(ApiInfoCase [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 500001}, apiInfo=ApidetailCa...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=13, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;}, apiInfo=ApidetailCase ...)">test_case(ApiInfoCase [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773"}, apiInfo=ApidetailCase ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day15.study01.section02.All_Test_Case" hash-for-method="test_case(ApiInfoCase [caseId=17, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: -100}, apiInfo=ApidetailCase...)">test_case(ApiInfoCase [caseId=17, apiId=3, requestData={"member_id": 47,"amount": -100}, apiInfo=ApidetailCase...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="lemon.day19.testCase.All_Test_Case" hash-for-method="test_case(ApiCaseDetail [caseId=14, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;}, actualResp=, expecte...)">test_case(ApiCaseDetail [caseId=14, apiId=2, requestData={"mobile_phone": "13888887773"}, actualResp=, expecte...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -196,146 +210,267 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">lemon.day15.study01.section02.All_Test_Case</span>
+              <img src="failed.png"/>
+              <span class="class-name">lemon.day19.testCase.All_Test_Case</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=5, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailCase [...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=5, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=8, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, act...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=8, apiId=2, requestData={"mobile_phone": "13855557777","pwd": "12345678"}, act...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=5, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=8, apiId=2, requestData={"mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":0},
+{"jsonPath":"$.msg","expected":"OK"},
+{"jsonPath":"$.data.id","expected":38},
+{"jsonPath":"$.data.type","expected":1}], apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=12, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, apiInfo...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=12, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, apiInfo...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=2, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, ac...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=2, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=12, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=2, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"账号已存在"}], apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: Could not initialize class lemon.day19.utils.DbUtils
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=3, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Ap...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=3, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, apiInfo=Ap...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=1, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13855557777&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, ac...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=1, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=3, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=1, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
+                  <div class="stack-trace">java.lang.ExceptionInInitializerError
+	at lemon.day19.utils.SqlCheckUtils.check(SqlCheckUtils.java:51)
+	at lemon.day19.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:19)
+	at lemon.day19.testCase.All_Test_Case.test_case(All_Test_Case.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Unknown Source)
+	at java.util.Properties.load0(Unknown Source)
+	at java.util.Properties.load(Unknown Source)
+	at lemon.day19.utils.DbUtils.init(DbUtils.java:59)
+	at lemon.day19.utils.DbUtils.&lt;clinit&gt;(DbUtils.java:33)
+	... 27 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">lemon.day19.testCase.All_Test_Case</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_case(ApiCaseDetail [caseId=3, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRe...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=3, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualRe...) -->
+                  <span class="method-name">test_case</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=3, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"无效的手机格式"}], apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=6, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, apiInfo...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=6, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, apiInfo...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=17, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 500001}, actualResp=, expe...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=17, apiId=3, requestData={"member_id": 47,"amount": 500001}, actualResp=, expe...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=6, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=17, apiId=3, requestData={"member_id": 47,"amount": 500001}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=1, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiI...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=1, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345678"}, apiI...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=18, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: -100}, actualResp=, expect...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=18, apiId=3, requestData={"member_id": 47,"amount": -100}, actualResp=, expect...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=1, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=18, apiId=3, requestData={"member_id": 47,"amount": -100}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=15, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 6300}, apiInfo=ApidetailCase...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 6300}, apiInfo=ApidetailCase...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=6, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, expected...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=6, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expected...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 6300}, apiInfo=ApidetailCase [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=6, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"手机号为空"}], apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=2, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Ap...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=2, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, apiInfo=Ap...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=12, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, exp...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=12, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, exp...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=2, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=12, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=9, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Apidetai...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=9, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, apiInfo=Apidetai...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=4, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRe...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=4, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualRe...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=9, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=4, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"无效的手机格式"}], apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=8, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiInfo=Api...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=8, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, apiInfo=Api...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=15, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 0}, actualResp=, expectedR...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 0}, actualResp=, expectedR...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=8, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 0}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=10, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailCase [...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=5, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=5, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, actualResp...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=5, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"密码为空"}], apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=7, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, apiIn...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=7, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345678"}, apiIn...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=16, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 6300}, actualResp=, expect...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 6300}, actualResp=, expect...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=7, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345678"}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 6300}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=4]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=14, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 0}, apiInfo=ApidetailCase [a...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=14, apiId=3, requestData={"member_id": 47,"amount": 0}, apiInfo=ApidetailCase [a...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=7, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, actua...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=7, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, actua...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=14, apiId=3, requestData={"member_id": 47,"amount": 0}, apiInfo=ApidetailCase [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=7, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=2]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=4, apiId=1, requestData={ &quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=Apid...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=4, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, apiInfo=Apid...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=10, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualResp=, ...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, ...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=4, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, apiInfo=ApidetailCase [apiId=1, apiName=注册, url=http://120.78.128.25:8766/futureloan/member/register, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=11, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;lemon&quot;,&quot;pwd&quot;: &quot;&quot;}, apiInfo=ApidetailC...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=11, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, apiInfo=ApidetailC...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=13, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;,&quot;pwd&quot;: &quot;12345&quot;}, actua...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, actua...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=11, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=16, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: 500001}, apiInfo=ApidetailCa...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 500001}, apiInfo=ApidetailCa...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=9, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888&quot;,&quot;pwd&quot;: &quot;12345678&quot;}, actualRes...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=9, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualRes...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 500001}, apiInfo=ApidetailCase [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=9, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=13, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;}, apiInfo=ApidetailCase ...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773"}, apiInfo=ApidetailCase ...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=11, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;&quot;,&quot;pwd&quot;: &quot;&quot;}, actualResp=, expected...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=11, apiId=2, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expected...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773"}, apiInfo=ApidetailCase [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=11, apiId=2, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_case(ApiInfoCase [caseId=17, apiId=3, requestData={&quot;member_id&quot;: 47,&quot;amount&quot;: -100}, apiInfo=ApidetailCase...)">
-                  </a> <!-- test_case(ApiInfoCase [caseId=17, apiId=3, requestData={"member_id": 47,"amount": -100}, apiInfo=ApidetailCase...) -->
+                  <a name="test_case(ApiCaseDetail [caseId=14, apiId=2, requestData={&quot;mobile_phone&quot;: &quot;13888887773&quot;}, actualResp=, expecte...)">
+                  </a> <!-- test_case(ApiCaseDetail [caseId=14, apiId=2, requestData={"mobile_phone": "13888887773"}, actualResp=, expecte...) -->
                   <span class="method-name">test_case</span>
-                  <span class="parameters">(ApiInfoCase [caseId=17, apiId=3, requestData={"member_id": 47,"amount": -100}, apiInfo=ApidetailCase [apiId=3, apiName=充值, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST]])</span>
+                  <span class="parameters">(ApiCaseDetail [caseId=14, apiId=2, requestData={"mobile_phone": "13888887773"}, actualResp=, expectedRespKeyInfo=, apiInfo=ApiInfo [apiId=2, apiName=登录, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v1"},{"name":"org","value":"lemonban"}], getRowNo()=3]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -343,7 +478,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-1714785345\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-2003289931\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -352,7 +487,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;lemon.day15.study01.section02.All_Test_Case&quot;/&gt;
+      &lt;class name=&quot;lemon.day19.testCase.All_Test_Case&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -392,75 +527,79 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_case')
-data.setCell(0, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(0, 3, 536);
+data.setCell(0, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(0, 3, 611);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_case')
-data.setCell(1, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(1, 3, 85);
+data.setCell(1, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(1, 3, 87);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_case')
-data.setCell(2, 2, 'lemon.day15.study01.section02.All_Test_Case')
+data.setCell(2, 2, 'lemon.day19.testCase.All_Test_Case')
 data.setCell(2, 3, 85);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test_case')
-data.setCell(3, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(3, 3, 84);
+data.setCell(3, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(3, 3, 82);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test_case')
-data.setCell(4, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(4, 3, 83);
+data.setCell(4, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(4, 3, 80);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test_case')
-data.setCell(5, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(5, 3, 82);
+data.setCell(5, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(5, 3, 79);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'test_case')
-data.setCell(6, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(6, 3, 80);
+data.setCell(6, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(6, 3, 77);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'test_case')
-data.setCell(7, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(7, 3, 80);
+data.setCell(7, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(7, 3, 76);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'test_case')
-data.setCell(8, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(8, 3, 79);
+data.setCell(8, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(8, 3, 75);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'test_case')
-data.setCell(9, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(9, 3, 78);
+data.setCell(9, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(9, 3, 75);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'test_case')
-data.setCell(10, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(10, 3, 76);
+data.setCell(10, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(10, 3, 75);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'test_case')
-data.setCell(11, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(11, 3, 75);
+data.setCell(11, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(11, 3, 74);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'test_case')
-data.setCell(12, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(12, 3, 75);
+data.setCell(12, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(12, 3, 74);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'test_case')
-data.setCell(13, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(13, 3, 74);
+data.setCell(13, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(13, 3, 73);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'test_case')
-data.setCell(14, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(14, 3, 74);
+data.setCell(14, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(14, 3, 72);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'test_case')
-data.setCell(15, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(15, 3, 71);
+data.setCell(15, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(15, 3, 7);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'test_case')
-data.setCell(16, 2, 'lemon.day15.study01.section02.All_Test_Case')
-data.setCell(16, 3, 71);
+data.setCell(16, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_case')
+data.setCell(17, 2, 'lemon.day19.testCase.All_Test_Case')
+data.setCell(17, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -491,75 +630,89 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">lemon.day15.study01.section02.All_Test_Case</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">lemon.day19.testCase.All_Test_Case</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=1, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345678"}, apiI...)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=1, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=2, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, apiInfo=Ap...)</span>
-                <span class="method-start">539 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=2, apiId=1, requestData={ "mobile_phone": "13855557777","pwd": "12345678"}, ac...)</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=3, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, apiInfo=Ap...)</span>
-                <span class="method-start">620 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=3, apiId=1, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualRe...)</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=4, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, apiInfo=Apid...)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=4, apiId=1, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualRe...)</span>
+                <span class="method-start">623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=5, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...)</span>
-                <span class="method-start">768 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=5, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": ""}, actualResp...)</span>
+                <span class="method-start">696 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=6, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, apiInfo...)</span>
-                <span class="method-start">852 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=6, apiId=1, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expected...)</span>
+                <span class="method-start">772 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=7, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345678"}, apiIn...)</span>
-                <span class="method-start">938 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=7, apiId=1, requestData={ "mobile_phone": "13888887773","pwd": "12345"}, actua...)</span>
+                <span class="method-start">853 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=8, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, apiInfo=Api...)</span>
-                <span class="method-start">1018 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=8, apiId=2, requestData={"mobile_phone": "13855557777","pwd": "12345678"}, act...)</span>
+                <span class="method-start">937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=9, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, apiInfo=Apidetai...)</span>
-                <span class="method-start">1100 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=9, apiId=2, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualRes...)</span>
+                <span class="method-start">941 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": ""}, apiInfo=ApidetailCase [...)</span>
-                <span class="method-start">1186 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=10, apiId=2, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, ...)</span>
+                <span class="method-start">1017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=11, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, apiInfo=ApidetailC...)</span>
-                <span class="method-start">1267 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=11, apiId=2, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expected...)</span>
+                <span class="method-start">1098 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=12, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, apiInfo...)</span>
-                <span class="method-start">1345 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=12, apiId=2, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, exp...)</span>
+                <span class="method-start">1173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773"}, apiInfo=ApidetailCase ...)</span>
-                <span class="method-start">1421 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=13, apiId=2, requestData={"mobile_phone": "13888887773","pwd": "12345"}, actua...)</span>
+                <span class="method-start">1252 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=14, apiId=3, requestData={"member_id": 47,"amount": 0}, apiInfo=ApidetailCase [a...)</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=14, apiId=2, requestData={"mobile_phone": "13888887773"}, actualResp=, expecte...)</span>
+                <span class="method-start">1330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_case(ApiCaseDetail [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 0}, actualResp=, expectedR...)</span>
+                <span class="method-start">1419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_case(ApiCaseDetail [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 6300}, actualResp=, expect...)</span>
                 <span class="method-start">1496 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=15, apiId=3, requestData={"member_id": 47,"amount": 6300}, apiInfo=ApidetailCase...)</span>
-                <span class="method-start">1572 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=17, apiId=3, requestData={"member_id": 47,"amount": 500001}, actualResp=, expe...)</span>
+                <span class="method-start">1582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=16, apiId=3, requestData={"member_id": 47,"amount": 500001}, apiInfo=ApidetailCa...)</span>
-                <span class="method-start">1656 ms</span>
+                <span class="method-name">test_case(ApiCaseDetail [caseId=18, apiId=3, requestData={"member_id": 47,"amount": -100}, actualResp=, expect...)</span>
+                <span class="method-start">1658 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_case(ApiInfoCase [caseId=17, apiId=3, requestData={"member_id": 47,"amount": -100}, apiInfo=ApidetailCase...)</span>
-                <span class="method-start">1729 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">1772 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
