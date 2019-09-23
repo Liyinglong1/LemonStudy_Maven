@@ -6,18 +6,18 @@ import java.util.Set;
 import com.alibaba.fastjson.JSONObject;
 
 public class JsonChange {
-//	3：将如下Json字符串转成Java对象
-//	1). {"name": "tom","age": "26","gender": "男"}
-//	2).  [ {"name": "tom","age": "26","gender": "男"}, {"name": "jack","age": "25","gender": "男"}, {"name": "rose","age": "26","gender": "女"} ]
+//	3锛氬皢濡備笅Json瀛楃涓茶浆鎴怞ava瀵硅薄
+//	1). {"name": "tom","age": "26","gender": "鐢�"}
+//	2).  [ {"name": "tom","age": "26","gender": "鐢�"}, {"name": "jack","age": "25","gender": "鐢�"}, {"name": "rose","age": "26","gender": "濂�"} ]
 	
 	public static void main(String[] args) {
-		String json1="{\"name\": \"tom\",\"age\": \"26\",\"gender\": \"男\"}";
-		String json2="[ {\"name\": \"tom\",\"age\": \"26\",\"gender\": \"男\"}, {\"name\": \"jack\",\"age\": \"25\",\"gender\": \"男\"}, {\"name\": \"rose\",\"age\": \"26\",\"gender\": \"女\"} ]";
-		//转换成user对象 
+		String json1="{\"name\": \"tom\",\"age\": \"26\",\"gender\": \"鐢穃\"}";
+		String json2="[ {\"name\": \"tom\",\"age\": \"26\",\"gender\": \"鐢穃\"}, {\"name\": \"jack\",\"age\": \"25\",\"gender\": \"鐢\"}, {\"name\": \"rose\",\"age\": \"26\",\"gender\": \"濂砛\"} ]";
+		//杞崲鎴恥ser瀵硅薄 
 		User user = JSONObject.parseObject(json1, User.class);
 		System.out.println(user);
 		
-		//转换 成map对象
+		//杞崲 鎴恗ap瀵硅薄
 		Map map = (Map) JSONObject.parse(json1);
 		System.out.println(map);
 		Set<String> set= map.keySet();
@@ -26,13 +26,13 @@ public class JsonChange {
 		}
 		
 		System.out.println(json2);
-		//转换 成map对象
+		//杞崲 鎴恗ap瀵硅薄
 		List<Map> datas = JSONObject.parseArray(json2, Map.class);
 		for (Map map2 : datas) {
 			System.out.println(map2);
 		}
 		
-		//转换成user对象 
+		//杞崲鎴恥ser瀵硅薄 
 		 List<User> user1 = JSONObject.parseArray(json2,User.class);
 		 for (User user2 : user1) {
 			System.out.println(user2);

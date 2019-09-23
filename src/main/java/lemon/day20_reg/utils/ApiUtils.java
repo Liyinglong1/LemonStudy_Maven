@@ -1,14 +1,14 @@
-package lemon.day19.utils;
+package lemon.day20_reg.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import lemon.day19.pojo.ApiCaseDetail;
-import lemon.day19.pojo.ApiInfo;
-import lemon.day19.pojo.CellData;
-import lemon.day19.pojo.SqlChecker;
+import lemon.day20_reg.pojo.ApiCaseDetail;
+import lemon.day20_reg.pojo.ApiInfo;
+import lemon.day20_reg.pojo.CellData;
+import lemon.day20_reg.pojo.SqlChecker;
 
 /**
  * 接口工具类
